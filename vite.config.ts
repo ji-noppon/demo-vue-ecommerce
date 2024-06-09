@@ -9,4 +9,9 @@ export default defineConfig({
     vue(),
     tsconfigPaths()
   ],
+  server: {
+    fs: {
+      cachedChecks: false
+    }
+  }
 })

@@ -15,6 +15,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 14px;
+}
+
 @layer base {
   h1 {
     @apply text-2xl;
@@ -28,39 +32,45 @@
   .container-size {
     @apply px-4
   }
+  .text-title {
+    @apply text-2xl
+  }
+  .text-sub-title {
+    @apply text-lg
+  }
+  .text-body {
+    @apply text-base
+  }
+  .text-secondary {
+    @apply text-sm text-gray-400
+  }
 }
 
 @layer utilities {
 }
 
-
-
-@media screen(sm) {
-  html {
-    font-size: 20px;
-  }
-}
+@media screen(sm) {}
 
 @media screen(md) {
   html {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
 @media screen(lg) {
   html {
-    font-size: 28px;
+    font-size: 20px;
   }
 }
 
 @media screen(xl) {
   html {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
 @media screen(2xl) {
   html {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
