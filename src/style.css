@@ -1,14 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+  .header {
+    @apply text-red-500 text-3xl;
+  }
+  .container-size {
+    @apply px-4
+  }
+  .text-title {
+    @apply text-2xl
+  }
+  .text-sub-title {
+    @apply text-lg
+  }
+  .text-body {
+    @apply text-base
+  }
+  .text-secondary {
+    @apply text-sm text-gray-400
+  }
+}
+
+@layer utilities {
+}
+
+@media screen(sm) {}
+
+@media screen(md) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen(lg) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen(xl) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen(2xl) {
+  html {
+    font-size: 28px;
+  }
 }
